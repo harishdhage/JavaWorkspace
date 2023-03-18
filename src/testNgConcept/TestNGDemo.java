@@ -30,9 +30,9 @@ public class TestNGDemo {
 		System.out.println("In 5. beforeMethod");
 	}
 	
-	@Test(groups={"abc"}, priority = 1)
-	public void test1(){
-		System.out.println("In test1");
+	@Test(groups="abc", priority = 1)
+	public void test21(){
+		System.out.println("In test21");
 	}
 	
 	@Test(priority=1)
