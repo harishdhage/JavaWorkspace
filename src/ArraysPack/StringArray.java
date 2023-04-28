@@ -1,4 +1,4 @@
-package arrayConcept;
+package ArraysPack;
 
 import javax.sound.midi.MidiDevice.Info;
 

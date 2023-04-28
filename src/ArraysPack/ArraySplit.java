@@ -19,7 +19,8 @@ class Splitter{
 	public void split(){
 		String[] sp3;
 		System.out.println("Array length - "+sp.length());
-		for (String sp2 : sp.split("$")) {
+		// Special charecter should be used with escape charecter in print statement
+		for (String sp2 : sp.split("\\$")) {
 			System.out.println(sp2);
 			//sp3[]=sp2;
 		}

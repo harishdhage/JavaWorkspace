@@ -12,7 +12,6 @@ public class MakeLargeNum {
         // traverse into descending
         Arrays.sort(arr);
 
-
         int num = 0;//arr[0];
 
         // generate the number

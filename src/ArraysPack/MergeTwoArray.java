@@ -24,7 +24,9 @@ class A{
             z[ind] = y[j];
             ind++;
         }
-
+        int[] xl = new int[x.length+y.length];
+        xl = Arrays.copyOfRange(x,0,x.length-1); // This statement allows to copy once array to another
+        xl = Arrays.copyOfRange(y, 0, y.length-1); // But for second array copy, it will over write
         Arrays.sort(z);
         System.out.println("Sorted array \n");
         for(int a: z){

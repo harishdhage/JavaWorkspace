@@ -12,6 +12,10 @@ class OverloadTest{
     public OverloadTest(){
         System.out.println("In a contructor");
     }
+
+    public OverloadTest(int x){
+        System.out.println("Inside Int version of overloaded contructor - OverloadTest");
+    }
     public void print(){
         System.out.println("In print()");
     }
@@ -22,7 +26,11 @@ class OverloadTest{
         return "pass";
     }*/
 
-    public final void print(int x){
-        System.out.println("IN final print(int x)");
+//    public final void print(int x){
+//        System.out.println("IN final print(int x)");
+//    }
+
+    public void print(float x){
+        System.out.println("Inside Float version call");
     }
 }
