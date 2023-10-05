@@ -12,7 +12,8 @@ class OneToFive{
         if (num == 6){
             return;
         }
-        System.out.print(num+" ");
+
         oneToFivePrint(num+1);
+        System.out.print(num+" ");
     }
 }

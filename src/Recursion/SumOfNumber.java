@@ -14,9 +14,9 @@ class SumOfNNumbersDemo{
         if (n == 0){
             return 0;
         }
-        int sum = n;
+        int sum;
 
-        sum = recursiveSumOfNumber(n-1) + sum;
+        sum = recursiveSumOfNumber(n-1) + n;
         System.out.println("Sum - "+sum);
         return sum;
     }
