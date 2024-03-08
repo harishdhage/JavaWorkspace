@@ -5,7 +5,7 @@ public class Factorial {
 
         FactorialCalc factorialCalc = new FactorialCalc();
         System.out.println("Factorial of 5 is "+factorialCalc.factorialLogic(5));
-        System.out.println("Factorial of 3 is "+factorialCalc.factorialLogic(3));
+//        System.out.println("Factorial of 3 is "+factorialCalc.factorialLogic(3));
     }
 }
 
@@ -16,7 +16,7 @@ class FactorialCalc{
         if (num == 1){
             return 1;
         }
-        result = factorialLogic(num-1)+num;
+        result = factorialLogic(num-1) * num;
         return result;
     }
 }
