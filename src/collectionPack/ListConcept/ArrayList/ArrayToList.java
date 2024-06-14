@@ -10,15 +10,20 @@ public class ArrayToList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+		//Its concept of autoboxing
 		List<Boolean> listA = new ArrayList<Boolean>();
 		listA.add(true);
 		listA.add(Boolean.parseBoolean("False"));
 		listA.add(Boolean.TRUE);
 		System.out.println(listA.size());
 		System.out.println(listA.get(1) instanceof Boolean);
-		
+		System.out.println(">> "+listA);
+
+		System.out.println("********************************************");
 		ArrayList<String> wordList = new ArrayList<>(Arrays.asList("Apple","banana","Alpenso","Bidi"));
 //		wordList = wordList.str
+		System.out.println(wordList);
 		System.out.println("********************************************");
 		
 		try {

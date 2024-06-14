@@ -32,6 +32,7 @@ public class TreeSetDemo {
         System.out.println(treeSet.higher(20));
         System.out.println(treeSet.headSet(21));
         System.out.println(treeSet.tailSet(20));
+        System.out.println(treeSet.subSet(9 , 20));
 
 
     }

@@ -16,15 +16,27 @@ public class ListDemo {
 		l.add("Mango");
 		l.add("Chikoo");
 		l.set(1, "Banana");
-		l.add(null);
+//		l.add(null);
 		l.add("Bread");
 		l.remove(0);
-
+		List copyList = List.copyOf(l); //Not allowed to add null and it unmodifiable list
+//		copyList.add("Flower");
+//		copyList.remove(1);
+		l.add(null);
+		System.out.println("CopyList : "+copyList);
 		l.add("Chikoo");
+		l.add("Bread");
 		System.out.println("********** List *************");
+		System.out.println(l);
+		l.set(1,"Chicken");
+		l.remove("Banana");
+//		l.replaceAll("Appls","");
 		System.out.println(l.size()+" || "+l);
 		System.out.println("List.of() : "+List.of(l));
 		System.out.println("List.of() : "+List.of(l,"Another Str"));
+		System.out.println("Last Index Of "+l.lastIndexOf("Bread"));
+		System.out.println(l.indexOf("Bread"));
+
 		//of() wont allow the null object and null elements
 //		System.out.println("List.of() : "+List.of(x));
 //		System.out.println("List.of() : "+List.of(null));
