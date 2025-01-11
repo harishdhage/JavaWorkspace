@@ -25,4 +25,6 @@ class MyComp implements Comparator<String> {
     public int compare(String aStr, String bStr){
         return aStr.compareTo(bStr);
     }
+
+    public boolean equals(String aStr, String bStr) { return  aStr.equals(bStr);}
 }
